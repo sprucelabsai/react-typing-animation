@@ -163,7 +163,7 @@ class Typing extends Component {
           break;
         }
 
-        cursor.charPos = text[cursor.lineNum].length
+        cursor.charPos = text[cursor.lineNum] && text[cursor.lineNum].length
           ? text[cursor.lineNum].length - 1
           : 0;
       }
